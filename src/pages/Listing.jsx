@@ -47,16 +47,7 @@ function Listing() {
       >
         {listing.imageUrls.map((url, i) => (
           <SwiperSlide key={i}>
-            <img
-              style={{
-                width: '100%',
-                height: '300px',
-                borderRadius: '1.5rem',
-                objectFit: 'cover',
-              }}
-              src={url}
-              alt='{listing.title}'
-            />
+            <img className='swiperSlideImg' src={url} alt='{listing.title}' />
           </SwiperSlide>
         ))}
       </Swiper>

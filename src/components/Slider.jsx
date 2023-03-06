@@ -56,12 +56,7 @@ function Slider() {
             onClick={() => navigate(`category/${data.type}/${id}`)}
           >
             <img
-              style={{
-                width: '100%',
-                height: '300px',
-                borderRadius: '1.5rem',
-                objectFit: 'cover',
-              }}
+              className='swiperSlideImg'
               src={data.imageUrls[0]}
               alt='{listing.title}'
             />

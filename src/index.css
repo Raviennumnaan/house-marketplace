@@ -333,7 +333,15 @@ button {
 
 .swiperSlideImg {
   width: 100%;
+  height: 300px;
+  border-radius: 1.5rem;
   object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .swiperSlideImg {
+    height: 200px;
+  }
 }
 
 .swiperSlideText {
